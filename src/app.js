@@ -5,10 +5,8 @@ require("../db/conn");
 const dbmodel = require("../db/models");
 const csvtojson = require("csvtojson");
 const router = require("../router/router");
-const { urlencoded } = require("express");
 
 app.use(express.json());
-// app.use(urlencoded({extended: false}));
 app.use(router);
 
 app.listen(port, ()=>{
